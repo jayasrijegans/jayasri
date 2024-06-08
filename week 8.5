@@ -1,0 +1,52 @@
+a = int(input())
+dictionary={}
+for i in range(a):
+    data = input().split()
+    student = data[0]
+    marks = list(map(int, data[1:]))
+    dictionary[student] = marks
+list1=[]
+list2=[]
+list3=[]
+d=dict(sorted(dictionary.items()))
+for  i in d:
+    b=d[i]
+    c=sum(b)
+    list1.append(c)
+k=max(list1)
+for i in d:
+    b=d[i]
+    c=sum(b)
+    if c==k:
+        print(i,end=" ")
+print('')
+for i in d:
+    b=d[i]
+    c=b[1]
+    list2.append(c)
+k=max(list2)
+for i in d:
+    b=d[i]
+    c=b[1]
+    if c==k:
+        print(i,end=" ")
+print('')
+for i in d:
+    b=d[i]
+    c=b[2]
+    list3.append(c)
+list3.sort()
+k=list3[0]
+for i in d:
+    b=d[i]
+    c=b[2]
+    if c==k:
+        print(i,end=" ")
+print('')
+list1.sort()
+k=list1[0]
+for  i in d:
+    b=d[i]
+    c=sum(b)
+    if c==k:
+        print(i,end=" ")
