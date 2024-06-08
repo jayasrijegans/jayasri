@@ -1,0 +1,13 @@
+str1=input()
+str2=input()
+str3=[]
+num=int(input())
+for i in str1:
+    for j in str2:
+        if i==j and i not in str3:
+            str3.append(i)
+            
+               
+for i in range(0,num):
+    print(str3[i],end="")
+    
