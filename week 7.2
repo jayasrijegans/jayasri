@@ -1,0 +1,35 @@
+n=int(input())
+list=[]
+flag=0
+row1="qwertyuiopQWERTYUIOP"
+listrow1=[]
+for i in row1:
+    listrow1.append(i)
+row2="asdfghjklASDFGHJKL"
+listrow2=[]
+for i in row2:
+    listrow2.append(i)
+row3="zxcvbnmZXCVBNM"
+listrow3=[]
+for i in row3:
+    listrow3.append(i)
+for item in range(0,n):
+    list1=[]
+    list2=[]
+    list3=[]
+    word=input()
+    for i in word:
+        if i in listrow1:
+            list1.append(i)
+        elif i in listrow2:
+            list2.append(i)
+        elif i in listrow3:
+            list3.append(i)
+    count1=len(list1)
+    count2=len(list2)
+    count3=len(list3)
+    if len(word)==count1 or len(word)==count2 or len(word)==count3:
+        print(word)
+        flag=1
+if flag==0:
+    print("No words")
