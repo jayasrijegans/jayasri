@@ -1,0 +1,11 @@
+k=[int(x) for x in input().split()]
+list1=[0]*100
+k.sort()
+for i in k:
+    list1[i]+=1
+s=[]    
+for i in k:
+    if i not in s:
+        s.append(i)
+for i in s:
+    print(i,list1[i])
