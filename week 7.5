@@ -1,0 +1,9 @@
+size1, size2 = map(int, input().split())
+arr1 = list(map(int, input().split()))
+arr2 = list(map(int, input().split()))
+unique_elements = set(arr1) ^ set(arr2)
+if unique_elements:
+    print(*unique_elements)
+    print(len(unique_elements))
+else:
+    print("NO SUCH ELEMENTS")
