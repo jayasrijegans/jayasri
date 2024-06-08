@@ -1,0 +1,12 @@
+a=int(input())
+d={}
+for i in range(0,a):
+    data=input().split()
+    s=data[0]
+    value=list(map(int,data[1:]))
+    d[s]=value
+dic=dict(sorted(d.items(),key=lambda item:item[1]))
+for i in dic:
+    b=dic[i]
+    c=sum(b)
+    print(i,c)
