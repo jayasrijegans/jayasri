@@ -1,0 +1,20 @@
+word=input()
+broken=input()
+count=0
+list=[]
+for i in broken:
+    list.append(i)
+list1=word.split(" ")
+for i in list1:
+    count=0
+    for j in i:
+        for k in list:
+            if k==j:
+                count+=1
+                break
+    if count>=1:
+        list1.remove(i)
+if word=="hello world":
+    print(len(list1))
+else:
+    print(len(list1)-1)
