@@ -1,0 +1,17 @@
+n=int(input())
+list=[]
+for i in range(0,n):
+    a=int(input())
+    list.append(a)
+search=int(input())
+count=0
+flag=0
+for i in list:
+    count+=1
+    if i==search:
+        print(search," is present at location ",count,".",sep="")
+        flag+=1
+if flag>1:
+    print(search,"is present",flag,"times in the array.")
+if flag==0:
+    print(search,"is not present in the array.")
