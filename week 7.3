@@ -1,0 +1,15 @@
+num=input()
+num1=num.split(" ")
+m=0
+n=0
+l1=list()
+for i in num1:
+    i=int(i)
+    l1.append(i)
+for i in l1:
+    m=l1.count(i)
+    if m>1:
+        print(i)
+        break
+
+       
