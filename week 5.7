@@ -1,0 +1,12 @@
+string1=input()
+tokens=string1.split("@")
+ind = tokens[1].find(".")
+com = tokens[1].split(".")
+
+# print(tokens[1][ind+1:len(tokens[1])])
+
+for i in range(ind+1, len(tokens[1])):
+    print(tokens[1][i],end="")
+
+print("\n",com[0],sep="")
+print(tokens[0])
