@@ -1,0 +1,27 @@
+a=int(input())
+list=[]
+for i in range(0,a):
+    b=input()
+    list.append(b)
+list.sort()
+d={}
+list1=[]
+for i in list:
+    if i not in list1:
+        list1.append(i)
+list2=[]
+for i in list1:
+    name=i
+    c=0
+    for j in list:
+        if j==i:
+            c+=1
+            list2.append(c)
+    d[name]=c
+k=max(list2)
+for i in d:
+    if d[i]==k:
+        print(i)
+        break
+    
+    
