@@ -1,0 +1,26 @@
+d={}
+list1=['A','E','I','L','N','O','R','S','T','U']
+list2=['D','G']
+list3=['B','C','M','P']
+list4=['F','H','V','W','Y']
+list5=['K']
+list6=['J','X']
+list7=['Q','Z']
+a=input()
+c=0
+for i in a:
+    if i in list1:
+        c+=1
+    elif i in list2:
+        c+=2
+    elif i in list3:
+        c+=3
+    elif i in list4:
+        c+=4
+    elif i in list5:
+        c+=5
+    elif i in list6:
+        c+=8
+    else:
+        c+=10
+print(a,'is worth',c,'points.')
