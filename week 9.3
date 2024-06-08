@@ -1,0 +1,11 @@
+def differenceSum(n):
+   odd=0
+   even=0
+   k=str(n)
+   for i in range(len(k)):
+       if i%2==0:
+           odd=odd+int(k[i])
+       else:   
+           even+=int(k[i])
+   return even-odd       
+    
