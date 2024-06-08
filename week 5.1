@@ -1,0 +1,16 @@
+str1=input()
+temp=[]
+result=[]
+for i in str1:
+    if i.isalpha():
+        temp.append(i)
+temp.reverse()
+result=[]
+for i in str1:
+    if i.isalpha():
+        result.append(temp.pop(0))
+    else:
+        result.append(i)
+for i in result:
+    print(i,end="")
+    
