@@ -1,0 +1,23 @@
+# Get input from the user
+s = input()
+sequence_length=10
+if len(s) < sequence_length:
+    print("No repeated sequences.")
+else:
+    seen = {}
+    repeated = []
+    
+    for i in range(len(s) - sequence_length + 1):
+        sequence = s[i:i + sequence_length]
+        if sequence in seen:
+            seen[sequence] += 1
+            if seen[sequence] == 2:
+                repeated.append(sequence)
+        else:
+            seen[sequence] = 1
+
+    if not repeated:
+        print("No repeated sequences.")
+    else:
+        for sequence in repeated:
+            print(sequence)
