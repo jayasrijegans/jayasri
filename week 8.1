@@ -1,0 +1,21 @@
+a=input().split()
+b=input().split()
+list=[]
+for i in a:
+    list.append(i)
+for i in b:
+    list.append(i)
+list1=[]
+removed=[]
+for i in list:
+    if i not in list1:
+        list1.append(i)
+    else:
+        removed.append(i)
+for i in removed:
+    if i in list1:
+        list1.remove(i)
+        removed.remove(i)
+for i in list1:
+    if i!='apple':
+        print(i,end=" ")
