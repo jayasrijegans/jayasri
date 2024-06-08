@@ -1,0 +1,12 @@
+s=input()
+to_print=[]
+while(not(s)==" "):
+    to_print.append(s)
+    s=input()
+printed=[]
+for x in to_print:
+    if(not(x in printed)):
+        print(x)
+        printed.append(x)
+    else:
+        continue
